@@ -3,7 +3,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import AddService from "../AddService/AddService";
-import MakeAdmin from "../MakeAdmin/MakeAdmin";
+
 
 import ManageServices from "../ManageServices/ManageServices";
 import RepairList from "./../RepairList/RepairList"
@@ -21,9 +21,7 @@ const AdminDashboard = () => {
           <Route path="/addService">
             <AddService></AddService>
           </Route>
-          <Route path="/makeAdmin">
-            <MakeAdmin></MakeAdmin>
-          </Route>
+         
           <Route path="/repairList">
             <RepairList></RepairList>
           </Route>

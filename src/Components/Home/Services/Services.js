@@ -2,23 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
 
-// const serviceData = [
-//   {
-//     title: "MOBILE PHONES",
 
-//     icon: faMobile,
-//   },
-//   {
-//     title: "TABLETS",
-
-//     icon: faTabletAlt,
-//   },
-//   {
-//     title: "Game Console",
-
-//     icon: faGamepad,
-//   },
-// ];
 
 const Services = () => {
   const [serviceData, setServiceData] = useState([]);
