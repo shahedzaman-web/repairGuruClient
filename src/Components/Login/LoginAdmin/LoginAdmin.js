@@ -29,12 +29,13 @@ const LoginAdmin = () => {
     : alert("Login Failed!")
     );
     
-    alert("email: admin@gmail.com password: admin1234")
+ 
   
 
     
   };
   sessionStorage.setItem("email",loggedInUser)
+  alert("email: admin@gmail.com password: admin1234")
   return (
     <div className="login-page container">
       <div className="row align-items-center" style={{ height: "100vh" }}>
