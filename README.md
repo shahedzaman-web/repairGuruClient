@@ -1,7 +1,7 @@
 # Repair Guru 
 It’s a full-stack web site that offers different types of device repairing service.
 
-Live site link : https://repair-guru-sz.web.app/
+Live site link : https://repairguru.netlify.app/
 
 
 
