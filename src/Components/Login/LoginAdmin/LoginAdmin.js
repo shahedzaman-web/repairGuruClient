@@ -29,7 +29,7 @@ const LoginAdmin = () => {
     : alert("Login Failed!")
     );
     
-    
+    alert("email: admin@gmail.com password: admin1234")
   
 
     
