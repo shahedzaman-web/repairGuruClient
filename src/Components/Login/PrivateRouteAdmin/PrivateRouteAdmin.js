@@ -2,29 +2,26 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../../../App";
-import jwt_decode from "jwt-decode";
+
+
 
 const PrivateRouteAdmin = ({ children, ...rest }) => {
   // eslint-disable-next-line
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  // const email = 
 
-  const isLoggedIn = () => {
-    const token = sessionStorage.getItem("token");
-    if (!token) {
-      return false;
-    }
-    const decodedToken = jwt_decode(token);
-    // get current time
-    const currentTime = new Date().getTime() / 1000;
-    // compare the expiration time with the current time
-    // will return false if expired and will return true if not expired
-    return decodedToken.exp > currentTime;
-  };
+ 
+  
+ console.log(sessionStorage.email);
+ 
+   
+
+
   return (
     <Route
       {...rest}
       render={({ location }) =>
-        loggedInUser|| isLoggedIn() ? (
+      sessionStorage.email ? (
           children
         ) : (
           <Redirect

@@ -12,8 +12,8 @@ import AdminDashboard from "./Components/AdminDashboard/AdminDashboard/AdminDash
 export const UserContext = createContext();
 
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({});
-  
+  const [loggedInUser, setLoggedInUser] = useState({"email": ""});
+
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
@@ -21,13 +21,12 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-
-          <Route path="/loginUser">
+         <Route path="/loginUser">
             <LoginUser></LoginUser>
           </Route>
-<Route path="/loginAdmin">
-  <LoginAdmin/>
-  </Route>
+        <Route path="/loginAdmin">
+                <LoginAdmin/>
+                  </Route>
           <PrivateRouteUser path="/bookingDashboard">
             <BookingDashboard></BookingDashboard>
           </PrivateRouteUser>

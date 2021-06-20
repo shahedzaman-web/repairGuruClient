@@ -52,15 +52,15 @@ const LoginUser = () => {
       <div className="row align-items-center" style={{ height: "100vh" }}>
         <div className="col-md-6 shadow p-5">
           <div className="form-group">
-            <label htmlFor="">User Name</label>
+            <label htmlhtmlFor="">User Name</label>
             <input type="text" className="form-control" />
           </div>
           <div className="form-group">
-            <label htmlFor="">Password</label>
+            <label htmlhtmlFor="">Password</label>
             <input type="password" className="form-control" />
           </div>
           <div className="form-group">
-            <label htmlFor="" className="text-danger">
+            <label htmlhtmlFor="" className="text-danger">
               Forgot your password?
             </label>
           </div>
